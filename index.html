@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel = "icon" href ="favicon.ico"
+		type = "image/x-icon">
+      <title>Jash Thakkar</title>
+      <script language="javascript">
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+
+        function Disable_Control_C() {
+        var keystroke = String.fromCharCode(event.keyCode).toLowerCase();
+        
+        if (event.ctrlKey && (keystroke == 'c' || keystroke == 'v')) {
+        alert("You are NOT allowed to copy/paste the text from this website");
+        event.returnValue = false; // disable Ctrl+C
+        }
+        }
+        
+        </script>
+</head>
+<body onkeydown="javascript:Disable_Control_C()">
+
+  <!--The code given below is of Navigation bar-->
+
+<header>
+    <h1 class="logo">Jash Thakkar</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+  
+  <!--The Below code is of Home Page-->
+  
+  <div class="content">
+    <h1>Hello everyone.<br>
+      <span>This is Jash Thakkar</span><br>
+      Welcome to my website!!</h1>
+    <p>
+      <a name="Home">
+      As you know, I have done some projects for web designing. Intially, I was kinda losing interest in ...(More on my <a href="blog">Blog page</a>)<br/>
+      <br> Currently I have finished my Term 2 exam of <a href="https://www.cbse.nic.in">CBSE Board</a>. The papers were kinda easy but they were lengthy.<br>
+      I have 
+      <br>So, yeah. I will describe my experience of 10th Boards & my coding on my Blog page.<br> <b><u>Thanks for visiting my Website.</u></b>
+      </a>
+    </p>
+    </div>
+
+    <div class="copyright">
+      &copy; 2022 My Website. All rights reserved.<br>The Website was created by Jash Thakkar.
+  </div>
+
+
+</body>
+</html>

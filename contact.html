@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel = "icon" href ="favicon.ico"
+		type = "image/x-icon">
+    <title>Contact me</title>
+    <style>
+        .blue-color{
+            color: blue;
+            font-size: 50px;
+            margin-top: 150px;
+        }
+
+        .red-color{
+            color:red;
+            font-size:50px;
+            margin-top:50px;
+        }
+        .discord i{
+            font-size:50px;
+            margin-top: 100px;
+        }
+    </style>
+    <script language="javascript">
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+
+        function Disable_Control_C() {
+        var keystroke = String.fromCharCode(event.keyCode).toLowerCase();
+        
+        if (event.ctrlKey && (keystroke == 'c' || keystroke == 'v')) {
+        alert("You are NOT allowed to copy the text from this website");
+        event.returnValue = false; // disable Ctrl+C
+        }
+        }
+        
+        </script>
+</head>
+<body onkeydown="javascript:Disable_Control_C()">
+    <button onclick="history.back()">Go Back</button>
+    <div class="youtube">
+        <p>
+            &nbsp;<i class='fa fa-telegram blue-color'><a href="https://t.me/+yjnGWc4tjAZhMDZl">Telegram</a></i>
+            <br/><br>
+            <i class='fa fa-youtube red-color'><a href="https://www.youtube.com/channel/UCdHRf1bRwo71cMoU93HvbyQ">YouTube</a></i>
+            <br/><br>
+        </p>
+        <h3>
+            Here's the video or <a href="https://www.youtube.com/watch?v=gSvSNVgrSn4">click here</a>
+        </h3>
+        </div>
+        <div class="video">
+        <iframe src="https://youtube.com/embed/gSvSNVgrSn4" autoplay="false" height="400px" width="700px">My Video</iframe>
+    </div>
+
+    <div class="copyright">
+        &copy; 2022 Contacts. All rights reserved.<br>The Website was created by Jash Thakkar.
+    </div>
+
+</body>
+</html>

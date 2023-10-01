@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>About me</title>
+<link href="about.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    </head>
+<script language="javascript">
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+
+function Disable_Control_C() {
+var keystroke = String.fromCharCode(event.keyCode).toLowerCase();
+
+if (event.ctrlKey && (keystroke == 'c' || keystroke == 'v')) {
+alert("You are NOT allowed to copy the text from this website");
+event.returnValue = false; // disable Ctrl+C
+}
+}
+
+</script>
+<link rel = "icon" href ="favicon.ico"
+		type = "image/x-icon">
+</head>
+<body onkeydown="javascript:Disable_Control_C()">
+    <button onclick="history.back()">Go Back</button>
+        <!-- header start -->
+        <div id="header" class="section">
+            <p>Jash Thakkar</p>
+        </div>
+        <!-- header end -->
+        
+        <!-- About Me section start -->
+        <div class="section">
+            <h1><span>About Me</span></h1>
+            <p>
+                Hello! I'm <strong>Jash Thakkar</strong>. I am doing Coding for about 2 Year, and it has changed my world. It's not just about apps or making webpages. While Learning to code, it gave me <i>problem-solving skills</i> and a way to communicate with others on a technical level. I can also develop websites like this and use my coding skills to get a better job. And I learned it all <strong>myself</strong>. It's easy to understand therotical part, but while doing practical, it takes a very long time. 
+            </p>
+            <p class="quote">"Work hard, have fun, make history."</p>
+        </div>
+        <!-- About Me section end -->
+ 
+        
+        
+        <!-- My Skills section start -->
+        <div class="section">
+            <h1><span>My Skills</span></h1>
+            <ul>
+                <li>HTML <br />
+                    <progress min="0" max="100" value="100"></progress>
+                </li>
+                <li>JavaScript <br />
+                    <progress min="0" max="100" value="10"></progress>
+                </li>
+                <li>Python <br />
+                    <progress min="0" max="100" value="18"></progress>
+                </li>
+                <li>CSS <br />
+                    <progress min="0" max="100" value="98"></progress>
+                </li>
+                <li>Windows Batch File <br />
+                    <progress min="0" max="100" value="2"></progress>
+                </li>
+                <li>Java <br />
+                    <progress min="0" max="100" value="5"></progress>
+                </li>
+                <li>JQuery <br />
+                    <progress min="0" max="100" value="14"></progress>
+                </li>
+                <li>PHP <br />
+                    <progress min="0" max="100" value="3"></progress>
+                </li>
+            </ul>
+        </div>
+        <!-- My Skills section end -->
+        
+        
+         <!-- Media section start -->
+        <div class="section">
+            <h1><span>My Media</span></h1>
+            <h2>Check out my Youtube.</h2>
+        
+
+        <iframe width="330" height="190" src="https://www.youtube.com/embed/W3eGl3ecwnw?controls=0" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Media section end -->
+
+        
+        <div class="copyright">
+            &copy; 2022 My Blog (About me). All rights reserved.<br>The website was created by Jash Thakkar.
+        </div>
+        
+    </body>
+</html>

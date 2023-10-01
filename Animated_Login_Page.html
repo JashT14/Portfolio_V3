@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login for Jash's Website</title>
+    <link rel="stylesheet" href="Animated_Login_Page.css">
+    <link rel = "icon" href ="favicon.ico"
+		type = "image/x-icon">
+    <script language="javascript">
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+    </script>
+  </head>
+  <body>
+    <button onclick="history.back()">Go Back</button>
+
+<form class="box" action="projects.html" method="post">
+  <h1>Login</h1>
+  <input type="text" name="" placeholder="Username">
+  <input type="password" name="" placeholder="Password">
+  <input type="submit" name="" value="Login">
+</form>
+
+<div class="text">
+    <p>
+        This is my another project, which will be helpful in future.<br/>
+        I am currently working on the Main Data processing languages like Jquery, PHP,. etc. for the Processing of the Data of the visitor of the website.
+    </p>
+</div>
+
+<div class="copyright">
+  &copy; 2022 My Projects. All rights reserved.<br>The Website was created by Jash Thakkar.
+</div>
+
+
+
+  </body>
+</html>
